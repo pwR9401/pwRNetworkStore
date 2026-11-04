@@ -1,0 +1,78 @@
+@font-face {
+    font-family: 'MinecraftDefault';
+    src: url('./MinecraftDefault-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #060B19;
+    font-family: 'MinecraftDefault', monospace;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 24px;
+    user-select: none;
+
+    -webkit-font-smoothing: none;
+    -moz-osx-font-smoothing: unset;
+    font-smooth: never;
+    text-rendering: pixelated;
+    image-rendering: pixelated;
+}
+
+.container {
+    max-width: 900px;
+    width: 100%;
+}
+
+.title {
+    font-size: 4rem;
+    font-weight: normal;
+    line-height: 1.1;
+    margin-bottom: 20px;
+    background: linear-gradient(135deg, #00F2FE 0%, #4FACFE 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    filter: drop-shadow(4px 4px 0px rgba(0, 0, 0, 0.75));
+}
+
+.subtitle {
+    font-size: 1.35rem;
+    color: #FFFFFF;
+    line-height: 1.4;
+    text-shadow: 2px 2px 0px #000000;
+}
+
+@media (max-width: 768px) {
+    .title {
+        font-size: 2.75rem;
+        margin-bottom: 16px;
+        filter: drop-shadow(3px 3px 0px rgba(0, 0, 0, 0.75));
+    }
+
+    .subtitle {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .title {
+        font-size: 2rem;
+    }
+
+    .subtitle {
+        font-size: 0.875rem;
+    }
+}
